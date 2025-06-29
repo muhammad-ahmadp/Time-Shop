@@ -1,0 +1,67 @@
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #f49d19;
+    outline: 1px solid #f49d19;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+
+
+/* Clamp Sizes for Different Heading Types */
+
+.hero-title {
+    /* Big main page heading */
+    font-size: clamp(2.5rem, 5vw, 4rem);
+}
+
+.section-title {
+    /* About, Projects, Skills, Contact headings */
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.card-title {
+    /* Optional — for small box or card titles */
+    font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.section {
+    margin-top: 6rem;
+}
